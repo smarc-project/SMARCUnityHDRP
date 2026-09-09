@@ -1,0 +1,22 @@
+{
+  "heightmapResolution": 2049,
+  "widthMeters": 545.6500000000233,
+  "lengthMeters": 347.09999999962747,
+  "heightMeters": 33.909000396728516,
+  "zMin": -33.909000396728516,
+  "zMax": 0.0,
+  "terrainPosX": -268.98500000004424,
+  "terrainPosY": -33.909000396728516,
+  "terrainPosZ": -168.98899999912828,
+  "originLat": 59.104051853856305,
+  "originLon": 15.214612939480311,
+  "originEasting": 512292.775,
+  "originNorthing": 6551658.1,
+  "swLat": 59.10254193737472,
+  "swLon": 15.209907637322791,
+  "neLat": 59.10564329204791,
+  "neLon": 15.219453264306777,
+  "rawRelative": "Terrain/hynnebergsbrottet_heightmap.raw",
+  "utmZone": 33,
+  "utmBand": "V"
+}

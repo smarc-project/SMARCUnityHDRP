@@ -1,0 +1,25 @@
+{
+  "name": "loading_tower",
+  "frame": "Unity Y-up metres, vertices LOCAL to GameObject (centroid)",
+  "unity_x": -169.53668149959864,
+  "unity_y": -16.18115091501998,
+  "unity_z": -98.22605946306139,
+  "easting": 512123.2383185004,
+  "northing": 6551559.873940537,
+  "vertexCount": 54165,
+  "triangleCount": 100397,
+  "bbox_unity_global": {
+    "min": [
+      -172.91700000001583,
+      -22.095,
+      -102.24200000148267
+    ],
+    "max": [
+      -164.86999999999534,
+      -11.912999999999998,
+      -93.66500000003725
+    ]
+  },
+  "source": "/media/shekharu/DATA/OneDrive/SMaRC PhD/Datasets/orebro/processed_svp_2026-09/mesh/hynnebergsbrottet_tower_ml_bpa.ply",
+  "note": "MeshLab ball-pivoting of the surveyed lattice. Not a cuboid, not Poisson. Heightmap unchanged."
+}

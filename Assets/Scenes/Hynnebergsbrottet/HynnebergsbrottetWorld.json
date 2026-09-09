@@ -1,0 +1,99 @@
+{
+  "kind": "smarcunity_askoworld_clone",
+  "crs": "EPSG:32633",
+  "utm_zone": 33,
+  "utm_band": "V",
+  "unity_mapping": "x = easting - origin_easting; y = z - origin_z (up); z = northing - origin_northing",
+  "origin": {
+    "easting": 512292.775,
+    "northing": 6551658.1,
+    "z": 0.0,
+    "lat": 59.104051853856305,
+    "lon": 15.214612939480311,
+    "unity": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "name": "GLOBALREF - HynnebergsbrottetOrigin",
+    "note": "Same origin as mesh/origin.json (2026-07-08 waterline)."
+  },
+  "terrain": {
+    "raw": "Terrain/hynnebergsbrottet_heightmap.raw",
+    "preview": "Terrain/hynnebergsbrottet_heightmap_preview.png",
+    "heightmapResolution": 2049,
+    "byteOrder": "Windows (little-endian)",
+    "bitDepth": 16,
+    "widthMeters": 545.6500000000233,
+    "lengthMeters": 347.09999999962747,
+    "heightMeters": 33.909000396728516,
+    "zMin": -33.909000396728516,
+    "zMax": 0.0,
+    "nodata": "encoded as 0 (bottom of height range)",
+    "source": "/media/shekharu/DATA/OneDrive/SMaRC PhD/Datasets/orebro/processed_svp_2026-09/geotiff/depth_median_05cm.tif",
+    "note": "Class-0 heightfield. No overhangs. Unity Terrain Import Raw, then set Terrain width/length/height and place the GameObject at terrain.position below.",
+    "position": {
+      "x": -268.98500000004424,
+      "y": -33.909000396728516,
+      "z": -168.98899999912828
+    },
+    "size": {
+      "x": 545.6500000000233,
+      "y": 33.909000396728516,
+      "z": 347.09999999962747
+    },
+    "unitySW_local": {
+      "x": 0.0,
+      "y": 33.909000396728516,
+      "z": 0.0
+    },
+    "unityNE_local": {
+      "x": 545.6500000000233,
+      "y": 33.909000396728516,
+      "z": 347.09999999962747
+    },
+    "unityWaterLevel_local": {
+      "x": 272.82500000001164,
+      "y": 33.909000396728516,
+      "z": 173.54999999981374
+    }
+  },
+  "landmarks": {
+    "earthSW": {
+      "name": "Earth SW Corner",
+      "easting": 512023.79,
+      "northing": 6551489.1110000005,
+      "lat": 59.10254193737472,
+      "lon": 15.209907637322791,
+      "unity_x": -268.98500000004424,
+      "unity_y": 0.0,
+      "unity_z": -168.98899999912828
+    },
+    "earthNE": {
+      "name": "Earth NE Corner",
+      "easting": 512569.44,
+      "northing": 6551836.211,
+      "lat": 59.10564329204791,
+      "lon": 15.219453264306777,
+      "unity_x": 276.66499999997905,
+      "unity_y": 0.0,
+      "unity_z": 178.1110000004992
+    }
+  },
+  "objects": [
+    {
+      "name": "loading_tower",
+      "mesh": "Objects/loading_tower.bin",
+      "vertices": 54165,
+      "triangles": 100397,
+      "unity_x": -169.53668149959864,
+      "unity_y": -16.18115091501998,
+      "unity_z": -98.22605946306139,
+      "note": "MeshLab BPA lattice, Unity Y-up local to GO centroid. ApplyOnce reads the .bin."
+    }
+  ],
+  "askoWorld": {
+    "copy": "SMARCAssets/Runtime/Prefabs/Environment/GeoReferenced/AskoWorld.prefab",
+    "replace": "Asko terrain \u2192 this RAW; GLOBALREF lat/lon \u2192 origin; GeoRefTransformer Earth SW/NE \u2192 landmarks.earthSW/NE; drop Objects/*.obj at (0,0,0) and add GeoReference."
+  }
+}

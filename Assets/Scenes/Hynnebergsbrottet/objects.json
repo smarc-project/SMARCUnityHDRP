@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "name": "loading_tower",
+      "mesh": "Objects/loading_tower.bin",
+      "unityX": -169.53668149959864,
+      "unityY": -16.18115091501998,
+      "unityZ": -98.22605946306139,
+      "vertices": 54165,
+      "triangles": 100397,
+      "note": "MeshLab BPA lattice, Unity Y-up local to GO centroid. Real cluster, not the old cuboid pad at -185/-96."
+    }
+  ]
+}
